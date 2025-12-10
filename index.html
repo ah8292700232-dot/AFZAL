@@ -1,83 +1,152 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWW.SHAHPUR JUNAID.COM</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laptop Zone — Mahua, Vaishali | Laptop Repair & Services</title>
+  <meta name="description" content="Laptop Zone — Laptop repair & services in Mahua, Vaishali. Services: system formatting, touchpad repair, port repair, cleaning, diagnostics. Open 09:00 - 19:00." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0b74de;--muted:#6b7280;--bg:#f7f8fb}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#111}
+    body{background:var(--bg);line-height:1.5}
+    .container{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{background:#fff;padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;align-items:center}
+    .logo h1{font-size:20px;margin:0}
+    .topinfo{margin-left:auto;text-align:right}
+    .rating{font-weight:700;color:#111}
+    .badge{display:inline-block;background:linear-gradient(90deg,#0b74de,#0066cc);color:#fff;padding:6px 10px;border-radius:999px;font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:20px}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .hero{display:flex;gap:18px;align-items:center}
+    .hero img{width:140px;height:110px;object-fit:cover;border-radius:8px}
+    h2{margin:0 0 8px 0}
+    p.muted{color:var(--muted);margin:0}
+    .services ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    .services li{padding:8px 10px;border-radius:8px;background:#f1f5f9;font-weight:600}
+    .price-list{display:grid;gap:8px}
+    .price-item{display:flex;justify-content:space-between;padding:10px;border-radius:8px;background:#fff}
+    .cta{display:flex;gap:8px;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;border:0;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-outline{background:#fff;border:1px solid #e6eefb}
+    aside .map{height:220px;border-radius:10px;overflow:hidden}
+    .reviews{margin-top:12px}
+    .review{padding:10px;border-left:4px solid #e7f3ff;background:#fbfdff;border-radius:8px;margin-bottom:8px}
+    footer{margin-top:28px;text-align:center;color:var(--muted)}
+    form .row{display:flex;gap:8px}
+    form input,form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefb}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.topinfo{text-align:left;margin-left:auto}.hero{flex-direction:row}
+    .logo h1{font-size:18px}}
+  </style>
 </head>
 <body>
-
+  <div class="container">
     <header>
-        <div class="logo">SHAHPUR JUNAID</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#history">History</a>
-            <a href="#places">Landmarks</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <div class="logo">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f6b3b9b7e1a9b5e1a1c8e1c4f7f6b2a" alt="Laptop Zone" style="width:56px;height:56px;border-radius:8px;object-fit:cover;margin-right:12px">
+        <div>
+          <h1>Laptop Zone</h1>
+          <div style="font-size:13px;color:var(--muted)">Mahua, Vaishali</div>
+        </div>
+      </div>
+      <div class="topinfo">
+        <div class="rating">4.9 <span style="color:var(--muted);font-weight:500">(119 ratings)</span></div>
+        <div style="margin-top:6px"><span class="badge">Clamed</span></div>
+      </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <h1>Welcome to Our Village</h1>
-            <p>A confluence of peace, culture, and greenery.</p>
-            <button class="btn-primary" onclick="alert('Learning more about the village!')">Explore Our Story</button>
-        </section>
-
-        <section id="history" class="section">
-            <h2>📜 Village History & Culture</h2>
-            <p>Our village is centuries old, with deep roots in ancient culture and traditions. It has been a witness to great personalities and historical events.</p>
-            <div class="card-container">
-                <div class="history-card card">
-                    <h3>Foundation</h3>
-                    <p>The village was established approximately 100 years ago, focusing on agriculture and community living.</p>
-                </div>
-                <div class="history-card card">
-                    <h3>Key Festivals</h3>
-                    <p>In addition to EID-DUL-FITAR and EIDUL-AZHA, the annual fair dedicated to local deities is celebrated with great enthusiasm.</p>
-                </div>
+    <div class="grid">
+      <main>
+        <section class="card hero">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d2f6c3e2bb9c7c3b4d2f5a6b4c1a2f3" alt="repair photo">
+          <div>
+            <h2>Trusted Laptop Repair & Services</h2>
+            <p class="muted">Near Maurya Super Market & Krishna Hospital, Patepur Road, Mahua, Vaishali-844122, Bihar</p>
+            <div class="cta">
+              <a class="btn btn-primary" href="mailto:info@laptopzone-mahua.example">✉️ Email Us</a>
+              <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Near+Maurya+Super+Market+%26+Krishna+Hospital%2C+Patepur+Road%2C+Mahua%2C+Vaishali-844122%2C+Bihar" target="_blank">📍 Get Directions</a>
             </div>
+            <p style="margin-top:10px;color:var(--muted)"><strong>Hours:</strong> 09:00 - 19:00</p>
+          </div>
         </section>
 
-        <section id="places" class="section places-section">
-            <h2>🏞️ Key Landmarks</h2>
-            <div class="card-container">
-                <div class="place-card card">
-                    <img src="placeholder_temple.jpg" alt="MASJID CHOK"> 
-                    <h3>Ancient MOSQUE</h3>
-                    <p>Located at the heart of the village, this MOSQUE is famous for its intricate architecture.</p>
-                </div>
-                <div class="place-card card">
-                    <img src="placeholder_lake.jpg" alt="Village Lake">
-                    <h3>GRAVEYARD Lake</h3>
-                    <p>A tranquil spot for nature lovers, where several migratory birds visit seasonally.</p>
-                </div>
-                <div class="place-card card">
-                    <img src="placeholder_school.jpg" alt="Village School">
-                    <h3>Primary School</h3>
-                    <p>The pride of our village, offering quality education to our children since 2005.</p>
-                </div>
+        <section class="card services" style="margin-top:16px">
+          <h3>Services</h3>
+          <ul>
+            <li>System Formatting</li>
+            <li>Touchpad Repair</li>
+            <li>Port Repair (USB/HDMI)</li>
+            <li>Cleaning & Maintenance</li>
+            <li>Hardware Diagnostics</li>
+            <li>Chip Level Repair</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h3>Price & Popular Jobs</h3>
+          <div class="price-list">
+            <div class="price-item"><div>System Formatting</div><div>Ask for price</div></div>
+            <div class="price-item"><div>Touchpad Issue Diagnosis</div><div>Ask for price</div></div>
+            <div class="price-item"><div>Port Repair</div><div>Ask for price</div></div>
+            <div class="price-item"><div>Cleaning Service</div><div>Ask for price</div></div>
+          </div>
+          <p class="muted" style="margin-top:10px">Prices vary by model and severity. Get a free estimate by visiting the store or sending an enquiry.</p>
+        </section>
+
+        <section class="card reviews">
+          <h3>Customer Reviews</h3>
+          <div class="review"><strong>4.9</strong> — Rated by 119 customers on local listings. "Fast, honest and reliable service."</div>
+          <div class="review"><strong>5.0</strong> — "Repaired my laptop touchpad same day. Good prices."</div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h3>Contact & Enquiry</h3>
+          <p class="muted">Send a quick message and we'll get back to you.</p>
+          <form onsubmit="event.preventDefault();alert('Thanks — we would normally send this to the business. Replace the alert with your backend.');">
+            <div class="row" style="margin-bottom:8px">
+              <input type="text" placeholder="Your name" required>
+              <input type="tel" placeholder="Phone (optional)">
             </div>
+            <div style="margin-bottom:8px"><input type="email" placeholder="Email (optional)"></div>
+            <div style="margin-bottom:8px"><textarea rows="3" placeholder="Describe your issue or question" required></textarea></div>
+            <div style="display:flex;gap:8px"><button class="btn btn-primary" type="submit">Send Enquiry</button><a class="btn btn-outline" href="tel:+91">Call (show number on listing)</a></div>
+          </form>
         </section>
 
-        <section id="contact" class="section contact-section">
-            <h2>📞 Contact Us MOB-8578952570</h2>
-            <p>Get in touch for more information, support, or community involvement.</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form> 
-        </section>
-    </main>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Info</h3>
+          <p class="muted"><strong>Address:</strong><br>Near Maurya Super Market & Krishna Hospital,<br>Patepur Road, Mahua, Vaishali-844122, Bihar</p>
+          <p class="muted"><strong>Payment:</strong> UPI, Cash</p>
+          <p class="muted"><strong>Open:</strong> 09:00 - 19:00</p>
+          <div style="margin-top:12px">
+            <a class="btn btn-primary" href="#contact">Enquire</a>
+            <a class="btn btn-outline" href="https://wa.me/?text=Hello%20Laptop%20Zone%20Mahua" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Map</h3>
+          <div class="map">
+            <iframe width="100%" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps?q=Near+Maurya+Super+Market+%26+Krishna+Hospital,+Patepur+Road,+Mahua,+Vaishali-844122,+Bihar&output=embed" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Opening Hours</h3>
+          <p class="muted">Mon - Sun: 09:00 - 19:00</p>
+        </div>
+      </aside>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Our Village. All rights reserved.MADE BY ALTAMASH.</p>
+      <p>Website generated from the Justdial listing you provided. Replace contact placeholders and images with actual business assets before publishing.</p>
     </footer>
-
+  </div>
 </body>
 </html>
